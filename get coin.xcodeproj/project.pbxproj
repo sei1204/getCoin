@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		270454D81D1F7C07002C6637 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270454D71D1F7C07002C6637 /* AppDelegate.swift */; };
-		270454DA1D1F7C07002C6637 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 270454D91D1F7C07002C6637 /* GameScene.sks */; };
 		270454DC1D1F7C07002C6637 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270454DB1D1F7C07002C6637 /* GameScene.swift */; };
 		270454DE1D1F7C07002C6637 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270454DD1D1F7C07002C6637 /* GameViewController.swift */; };
 		270454E11D1F7C07002C6637 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 270454DF1D1F7C07002C6637 /* Main.storyboard */; };
@@ -16,6 +15,22 @@
 		270454E61D1F7C07002C6637 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 270454E41D1F7C07002C6637 /* LaunchScreen.storyboard */; };
 		270454F11D1F7C07002C6637 /* get_coinTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270454F01D1F7C07002C6637 /* get_coinTests.swift */; };
 		270454FC1D1F7C07002C6637 /* get_coinUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270454FB1D1F7C07002C6637 /* get_coinUITests.swift */; };
+		2732EDFB1D8529C000D1CB6D /* コース.png in Resources */ = {isa = PBXBuildFile; fileRef = 2732EDFA1D8529C000D1CB6D /* コース.png */; };
+		27BF28DF1D31E77A00AD4B2D /* COINS.png in Resources */ = {isa = PBXBuildFile; fileRef = 27BF28DE1D31E77A00AD4B2D /* COINS.png */; };
+		27BF28E11D31EC3900AD4B2D /* ボタン.png in Resources */ = {isa = PBXBuildFile; fileRef = 27BF28E01D31EC3900AD4B2D /* ボタン.png */; };
+		27BF28E31D31EC4800AD4B2D /* ボタン２.png in Resources */ = {isa = PBXBuildFile; fileRef = 27BF28E21D31EC4800AD4B2D /* ボタン２.png */; };
+		27BF28E71D31F56D00AD4B2D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27BF28E61D31F56D00AD4B2D /* ViewController.swift */; };
+		27BF28E91D31F5A000AD4B2D /* StageSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27BF28E81D31F5A000AD4B2D /* StageSelectViewController.swift */; };
+		27E9EFD91D979EB200F7D3BC /* MyParticle.sks in Resources */ = {isa = PBXBuildFile; fileRef = 27E9EFD71D979EB200F7D3BC /* MyParticle.sks */; };
+		27E9EFDA1D979EB200F7D3BC /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = 27E9EFD81D979EB200F7D3BC /* spark.png */; };
+		27E9EFDC1D979F0A00F7D3BC /* snow.sks in Resources */ = {isa = PBXBuildFile; fileRef = 27E9EFDB1D979F0A00F7D3BC /* snow.sks */; };
+		27E9EFDE1D979F3400F7D3BC /* smoke.sks in Resources */ = {isa = PBXBuildFile; fileRef = 27E9EFDD1D979F3400F7D3BC /* smoke.sks */; };
+		27E9EFE01D979F4E00F7D3BC /* rain.sks in Resources */ = {isa = PBXBuildFile; fileRef = 27E9EFDF1D979F4E00F7D3BC /* rain.sks */; };
+		27E9EFE21D979F6200F7D3BC /* magic.sks in Resources */ = {isa = PBXBuildFile; fileRef = 27E9EFE11D979F6200F7D3BC /* magic.sks */; };
+		27E9EFE41D979F8800F7D3BC /* fire.sks in Resources */ = {isa = PBXBuildFile; fileRef = 27E9EFE31D979F8800F7D3BC /* fire.sks */; };
+		27E9EFE61D979F9B00F7D3BC /* fire2.sks in Resources */ = {isa = PBXBuildFile; fileRef = 27E9EFE51D979F9B00F7D3BC /* fire2.sks */; };
+		27E9EFE91D979FB700F7D3BC /* bokeh.sks in Resources */ = {isa = PBXBuildFile; fileRef = 27E9EFE71D979FB700F7D3BC /* bokeh.sks */; };
+		27E9EFEA1D979FB700F7D3BC /* bokeh.png in Resources */ = {isa = PBXBuildFile; fileRef = 27E9EFE81D979FB700F7D3BC /* bokeh.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +53,6 @@
 /* Begin PBXFileReference section */
 		270454D41D1F7C06002C6637 /* get coin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "get coin.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		270454D71D1F7C07002C6637 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		270454D91D1F7C07002C6637 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		270454DB1D1F7C07002C6637 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		270454DD1D1F7C07002C6637 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		270454E01D1F7C07002C6637 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -51,6 +65,22 @@
 		270454F71D1F7C07002C6637 /* get coinUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "get coinUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		270454FB1D1F7C07002C6637 /* get_coinUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = get_coinUITests.swift; sourceTree = "<group>"; };
 		270454FD1D1F7C07002C6637 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2732EDFA1D8529C000D1CB6D /* コース.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "コース.png"; sourceTree = "<group>"; };
+		27BF28DE1D31E77A00AD4B2D /* COINS.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = COINS.png; sourceTree = "<group>"; };
+		27BF28E01D31EC3900AD4B2D /* ボタン.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ボタン.png"; sourceTree = "<group>"; };
+		27BF28E21D31EC4800AD4B2D /* ボタン２.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ボタン２.png"; sourceTree = "<group>"; };
+		27BF28E61D31F56D00AD4B2D /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		27BF28E81D31F5A000AD4B2D /* StageSelectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StageSelectViewController.swift; sourceTree = "<group>"; };
+		27E9EFD71D979EB200F7D3BC /* MyParticle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MyParticle.sks; sourceTree = "<group>"; };
+		27E9EFD81D979EB200F7D3BC /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
+		27E9EFDB1D979F0A00F7D3BC /* snow.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = snow.sks; sourceTree = "<group>"; };
+		27E9EFDD1D979F3400F7D3BC /* smoke.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = smoke.sks; sourceTree = "<group>"; };
+		27E9EFDF1D979F4E00F7D3BC /* rain.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = rain.sks; sourceTree = "<group>"; };
+		27E9EFE11D979F6200F7D3BC /* magic.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = magic.sks; sourceTree = "<group>"; };
+		27E9EFE31D979F8800F7D3BC /* fire.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = fire.sks; sourceTree = "<group>"; };
+		27E9EFE51D979F9B00F7D3BC /* fire2.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = fire2.sks; sourceTree = "<group>"; };
+		27E9EFE71D979FB700F7D3BC /* bokeh.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = bokeh.sks; sourceTree = "<group>"; };
+		27E9EFE81D979FB700F7D3BC /* bokeh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bokeh.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,14 +131,29 @@
 		270454D61D1F7C07002C6637 /* get coin */ = {
 			isa = PBXGroup;
 			children = (
+				2732EDFA1D8529C000D1CB6D /* コース.png */,
+				27BF28E21D31EC4800AD4B2D /* ボタン２.png */,
+				27BF28E01D31EC3900AD4B2D /* ボタン.png */,
+				27BF28DE1D31E77A00AD4B2D /* COINS.png */,
 				270454D71D1F7C07002C6637 /* AppDelegate.swift */,
-				270454D91D1F7C07002C6637 /* GameScene.sks */,
 				270454DB1D1F7C07002C6637 /* GameScene.swift */,
 				270454DD1D1F7C07002C6637 /* GameViewController.swift */,
+				27BF28E61D31F56D00AD4B2D /* ViewController.swift */,
+				27BF28E81D31F5A000AD4B2D /* StageSelectViewController.swift */,
 				270454DF1D1F7C07002C6637 /* Main.storyboard */,
 				270454E21D1F7C07002C6637 /* Assets.xcassets */,
 				270454E41D1F7C07002C6637 /* LaunchScreen.storyboard */,
 				270454E71D1F7C07002C6637 /* Info.plist */,
+				27E9EFD81D979EB200F7D3BC /* spark.png */,
+				27E9EFD71D979EB200F7D3BC /* MyParticle.sks */,
+				27E9EFDB1D979F0A00F7D3BC /* snow.sks */,
+				27E9EFDD1D979F3400F7D3BC /* smoke.sks */,
+				27E9EFDF1D979F4E00F7D3BC /* rain.sks */,
+				27E9EFE11D979F6200F7D3BC /* magic.sks */,
+				27E9EFE31D979F8800F7D3BC /* fire.sks */,
+				27E9EFE51D979F9B00F7D3BC /* fire2.sks */,
+				27E9EFE71D979FB700F7D3BC /* bokeh.sks */,
+				27E9EFE81D979FB700F7D3BC /* bokeh.png */,
 			);
 			path = "get coin";
 			sourceTree = "<group>";
@@ -235,10 +280,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				270454DA1D1F7C07002C6637 /* GameScene.sks in Resources */,
+				27E9EFE61D979F9B00F7D3BC /* fire2.sks in Resources */,
+				27E9EFE91D979FB700F7D3BC /* bokeh.sks in Resources */,
+				27E9EFE21D979F6200F7D3BC /* magic.sks in Resources */,
+				27BF28E11D31EC3900AD4B2D /* ボタン.png in Resources */,
+				27E9EFDA1D979EB200F7D3BC /* spark.png in Resources */,
+				27E9EFE41D979F8800F7D3BC /* fire.sks in Resources */,
+				27E9EFDC1D979F0A00F7D3BC /* snow.sks in Resources */,
+				2732EDFB1D8529C000D1CB6D /* コース.png in Resources */,
+				27BF28DF1D31E77A00AD4B2D /* COINS.png in Resources */,
+				27E9EFEA1D979FB700F7D3BC /* bokeh.png in Resources */,
+				27E9EFE01D979F4E00F7D3BC /* rain.sks in Resources */,
+				27BF28E31D31EC4800AD4B2D /* ボタン２.png in Resources */,
+				27E9EFDE1D979F3400F7D3BC /* smoke.sks in Resources */,
 				270454E61D1F7C07002C6637 /* LaunchScreen.storyboard in Resources */,
 				270454E31D1F7C07002C6637 /* Assets.xcassets in Resources */,
 				270454E11D1F7C07002C6637 /* Main.storyboard in Resources */,
+				27E9EFD91D979EB200F7D3BC /* MyParticle.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,7 +322,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				270454DC1D1F7C07002C6637 /* GameScene.swift in Sources */,
+				27BF28E91D31F5A000AD4B2D /* StageSelectViewController.swift in Sources */,
 				270454DE1D1F7C07002C6637 /* GameViewController.swift in Sources */,
+				27BF28E71D31F56D00AD4B2D /* ViewController.swift in Sources */,
 				270454D81D1F7C07002C6637 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -492,6 +552,7 @@
 				270455021D1F7C07002C6637 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		270455031D1F7C07002C6637 /* Build configuration list for PBXNativeTarget "get coinTests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +561,7 @@
 				270455051D1F7C07002C6637 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		270455061D1F7C07002C6637 /* Build configuration list for PBXNativeTarget "get coinUITests" */ = {
 			isa = XCConfigurationList;
@@ -508,6 +570,7 @@
 				270455081D1F7C07002C6637 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

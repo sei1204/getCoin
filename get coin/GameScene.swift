@@ -9,37 +9,60 @@
 import SpriteKit
 
 class GameScene: SKScene {
+    
+    var stage: Int!
+    var appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+    
+    
+    let scoreLabel = SKLabelNode(fontNamed: "Papyrus")
+    let ball = SKShapeNode(circleOfRadius: 50)
+    
     override func didMoveToView(view: SKView) {
-        /* Setup your scene here */
-        let myLabel = SKLabelNode(fontNamed:"Chalkduster")
-        myLabel.text = "Hello, World!"
-        myLabel.fontSize = 45
-        myLabel.position = CGPoint(x:CGRectGetMidX(self.frame), y:CGRectGetMidY(self.frame))
+        self.stage = appDelegate.numGamenseni
+        self.hantei(stage)
         
-        self.addChild(myLabel)
+        if let myEmitter = SKEffectNode(fileNamed: "MyParticle.sks") {
+            ball.addChild(myEmitter)
+        }
+        
+        self.physicsBody = SKPhysicsBody(edgeLoopFromRect: self.frame)
+        
+        self.physicsBody?.restitution = 0.1
+        
+        self.backgroundColor = UIColor.cyanColor()
+        
+        ball.physicsBody?.dynamic = true
+        
+        ball.physicsBody?.allowsRotation = true
+        
+        ball.physicsBody = SKPhysicsBody(circleOfRadius: 50)
     }
     
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
-       /* Called when a touch begins */
         
-        for touch in touches {
-            let location = touch.locationInNode(self)
-            
-            let sprite = SKSpriteNode(imageNamed:"Spaceship")
-            
-            sprite.xScale = 0.5
-            sprite.yScale = 0.5
-            sprite.position = location
-            
-            let action = SKAction.rotateByAngle(CGFloat(M_PI), duration:1)
-            
-            sprite.runAction(SKAction.repeatActionForever(action))
-            
-            self.addChild(sprite)
-        }
     }
    
     override func update(currentTime: CFTimeInterval) {
         /* Called before each frame is rendered */
     }
+    
+    func hantei(substitution:Int) {
+        
+    switch substitution {
+    
+        case 1: ball.fillColor = UIColor.yellowColor()
+                ball.position = CGPoint(x: 320, y: 568)
+                self.addChild(ball)
+        
+        case 2: ball.fillColor = UIColor.yellowColor()
+                ball.position = CGPoint(x: 320, y: 300)
+                self.addChild(ball)
+       
+       default: ball.fillColor = UIColor.yellowColor()
+                ball.position = CGPoint(x: 320, y: 568)
+                self.addChild(ball)
+    }
+  }
 }
+
+
