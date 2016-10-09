@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="cg8-tf-yO8">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="cg8-tf-yO8">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -24,7 +24,7 @@
                                     <color key="titleColor" red="1" green="0.28794999274313005" blue="0.33005187358677046" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Fcn-8t-gCI" kind="modal" modalTransitionStyle="partialCurl" id="rYT-gz-TO0"/>
+                                    <segue destination="Fcn-8t-gCI" kind="modal" modalTransitionStyle="coverVertical" id="rYT-gz-TO0"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="GET COINS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ULj-xS-O9K">
@@ -186,7 +186,7 @@
                         <color key="backgroundColor" red="0.65173919739999997" green="1" blue="0.85732545140000005" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <connections>
-                        <segue destination="BV1-FR-VrT" kind="modal" identifier="toGameScene" modalTransitionStyle="partialCurl" id="iqV-dF-sji"/>
+                        <segue destination="BV1-FR-VrT" kind="modal" identifier="toGameScene" modalTransitionStyle="coverVertical" id="iqV-dF-sji"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P3c-6Z-M0V" userLabel="First Responder" sceneMemberID="firstResponder"/>

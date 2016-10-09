@@ -10,13 +10,40 @@ import SpriteKit
 
 class GameScene: SKScene {
     
+//    ステージの値を共有
     var stage: Int!
     var appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
     
-    
+//    ボールとラベルの設定
     let scoreLabel = SKLabelNode(fontNamed: "Papyrus")
     let ball = SKShapeNode(circleOfRadius: 50)
     
+    //    ユーザーが書く動作
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        /* Called when a touch begins */
+        
+        for touch in touches {
+            let location = touch.locationInNode(self)
+            
+            let wroteThing = SKShapeNode(circleOfRadius: 50)
+            
+            wroteThing.position = location
+            
+            wroteThing.fillColor = UIColor.redColor()
+            
+            wroteThing.physicsBody?.dynamic = true
+            
+            wroteThing.physicsBody?.allowsRotation = true
+            
+            wroteThing.physicsBody?.restitution = 1.0
+            
+            wroteThing.physicsBody = SKPhysicsBody(circleOfRadius: 50)
+            
+            self.addChild(wroteThing)
+        }
+    }
+    
+//    ノードの初期化
     override func didMoveToView(view: SKView) {
         self.stage = appDelegate.numGamenseni
         self.hantei(stage)
@@ -27,7 +54,7 @@ class GameScene: SKScene {
         
         self.physicsBody = SKPhysicsBody(edgeLoopFromRect: self.frame)
         
-        self.physicsBody?.restitution = 0.1
+        self.physicsBody?.restitution = 1.0
         
         self.backgroundColor = UIColor.cyanColor()
         
@@ -36,16 +63,15 @@ class GameScene: SKScene {
         ball.physicsBody?.allowsRotation = true
         
         ball.physicsBody = SKPhysicsBody(circleOfRadius: 50)
-    }
-    
-    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        
         
     }
-   
+    
     override func update(currentTime: CFTimeInterval) {
         /* Called before each frame is rendered */
     }
     
+//    ボタンによるコース分けの宣言
     func hantei(substitution:Int) {
         
     switch substitution {
