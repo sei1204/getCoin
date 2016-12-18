@@ -11,7 +11,7 @@ import UIKit
 class StageSelectViewController: UIViewController {
     
     var stageNum: Int!
-    var appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+    var appDelegate:AppDelegate = UIApplication.shared.delegate as! AppDelegate
     
     
     override func viewDidLoad() {
@@ -26,8 +26,12 @@ class StageSelectViewController: UIViewController {
     }
     
     @IBAction func back(){
-        self.dismissViewControllerAnimated(true, completion: nil)
+        self.dismiss(animated: true, completion: nil)
 
+    }
+    
+    func performSegueToGameScene() {
+        performSegue(withIdentifier: "toGameScene", sender: nil)
     }
     
     @IBAction func stageSelect(sender: UIButton){
@@ -37,14 +41,13 @@ class StageSelectViewController: UIViewController {
         self.performSegueToGameScene()
     }
     
-   func performSegueToGameScene() {
-       performSegueWithIdentifier("toGameScene", sender: nil)
-   }
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any!) {
         if (segue.identifier == "toGameScene") {
-            let GameView = segue.destinationViewController as! GameViewController
-//            GameView.stage = self.stageNum
+            let GameView = segue.destination as! GameViewController
+            // GameViewControllerのstageにstageを代入
+            GameView.stage = self.stageNum
+            
         }
     }
 

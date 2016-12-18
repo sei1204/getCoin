@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		270454D81D1F7C07002C6637 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270454D71D1F7C07002C6637 /* AppDelegate.swift */; };
-		270454DC1D1F7C07002C6637 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270454DB1D1F7C07002C6637 /* GameScene.swift */; };
 		270454DE1D1F7C07002C6637 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270454DD1D1F7C07002C6637 /* GameViewController.swift */; };
 		270454E11D1F7C07002C6637 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 270454DF1D1F7C07002C6637 /* Main.storyboard */; };
 		270454E31D1F7C07002C6637 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 270454E21D1F7C07002C6637 /* Assets.xcassets */; };
@@ -16,6 +15,12 @@
 		270454F11D1F7C07002C6637 /* get_coinTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270454F01D1F7C07002C6637 /* get_coinTests.swift */; };
 		270454FC1D1F7C07002C6637 /* get_coinUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270454FB1D1F7C07002C6637 /* get_coinUITests.swift */; };
 		2732EDFB1D8529C000D1CB6D /* コース.png in Resources */ = {isa = PBXBuildFile; fileRef = 2732EDFA1D8529C000D1CB6D /* コース.png */; };
+		2769C8E41E065601002FC62D /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270454DB1D1F7C07002C6637 /* GameScene.swift */; };
+		2769C8E51E065602002FC62D /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270454DB1D1F7C07002C6637 /* GameScene.swift */; };
+		2769C8E61E065603002FC62D /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270454DB1D1F7C07002C6637 /* GameScene.swift */; };
+		27B28C351DCEF06400A8B9FF /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 27B28C321DCEF06400A8B9FF /* Default-568h@2x.png */; };
+		27B28C361DCEF06400A8B9FF /* Default-667h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 27B28C331DCEF06400A8B9FF /* Default-667h@2x.png */; };
+		27B28C371DCEF06400A8B9FF /* Default-736h@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 27B28C341DCEF06400A8B9FF /* Default-736h@3x.png */; };
 		27BF28DF1D31E77A00AD4B2D /* COINS.png in Resources */ = {isa = PBXBuildFile; fileRef = 27BF28DE1D31E77A00AD4B2D /* COINS.png */; };
 		27BF28E11D31EC3900AD4B2D /* ボタン.png in Resources */ = {isa = PBXBuildFile; fileRef = 27BF28E01D31EC3900AD4B2D /* ボタン.png */; };
 		27BF28E31D31EC4800AD4B2D /* ボタン２.png in Resources */ = {isa = PBXBuildFile; fileRef = 27BF28E21D31EC4800AD4B2D /* ボタン２.png */; };
@@ -23,14 +28,6 @@
 		27BF28E91D31F5A000AD4B2D /* StageSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27BF28E81D31F5A000AD4B2D /* StageSelectViewController.swift */; };
 		27E9EFD91D979EB200F7D3BC /* MyParticle.sks in Resources */ = {isa = PBXBuildFile; fileRef = 27E9EFD71D979EB200F7D3BC /* MyParticle.sks */; };
 		27E9EFDA1D979EB200F7D3BC /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = 27E9EFD81D979EB200F7D3BC /* spark.png */; };
-		27E9EFDC1D979F0A00F7D3BC /* snow.sks in Resources */ = {isa = PBXBuildFile; fileRef = 27E9EFDB1D979F0A00F7D3BC /* snow.sks */; };
-		27E9EFDE1D979F3400F7D3BC /* smoke.sks in Resources */ = {isa = PBXBuildFile; fileRef = 27E9EFDD1D979F3400F7D3BC /* smoke.sks */; };
-		27E9EFE01D979F4E00F7D3BC /* rain.sks in Resources */ = {isa = PBXBuildFile; fileRef = 27E9EFDF1D979F4E00F7D3BC /* rain.sks */; };
-		27E9EFE21D979F6200F7D3BC /* magic.sks in Resources */ = {isa = PBXBuildFile; fileRef = 27E9EFE11D979F6200F7D3BC /* magic.sks */; };
-		27E9EFE41D979F8800F7D3BC /* fire.sks in Resources */ = {isa = PBXBuildFile; fileRef = 27E9EFE31D979F8800F7D3BC /* fire.sks */; };
-		27E9EFE61D979F9B00F7D3BC /* fire2.sks in Resources */ = {isa = PBXBuildFile; fileRef = 27E9EFE51D979F9B00F7D3BC /* fire2.sks */; };
-		27E9EFE91D979FB700F7D3BC /* bokeh.sks in Resources */ = {isa = PBXBuildFile; fileRef = 27E9EFE71D979FB700F7D3BC /* bokeh.sks */; };
-		27E9EFEA1D979FB700F7D3BC /* bokeh.png in Resources */ = {isa = PBXBuildFile; fileRef = 27E9EFE81D979FB700F7D3BC /* bokeh.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +63,9 @@
 		270454FB1D1F7C07002C6637 /* get_coinUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = get_coinUITests.swift; sourceTree = "<group>"; };
 		270454FD1D1F7C07002C6637 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2732EDFA1D8529C000D1CB6D /* コース.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "コース.png"; sourceTree = "<group>"; };
+		27B28C321DCEF06400A8B9FF /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		27B28C331DCEF06400A8B9FF /* Default-667h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-667h@2x.png"; sourceTree = "<group>"; };
+		27B28C341DCEF06400A8B9FF /* Default-736h@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-736h@3x.png"; sourceTree = "<group>"; };
 		27BF28DE1D31E77A00AD4B2D /* COINS.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = COINS.png; sourceTree = "<group>"; };
 		27BF28E01D31EC3900AD4B2D /* ボタン.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ボタン.png"; sourceTree = "<group>"; };
 		27BF28E21D31EC4800AD4B2D /* ボタン２.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ボタン２.png"; sourceTree = "<group>"; };
@@ -73,14 +73,6 @@
 		27BF28E81D31F5A000AD4B2D /* StageSelectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StageSelectViewController.swift; sourceTree = "<group>"; };
 		27E9EFD71D979EB200F7D3BC /* MyParticle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MyParticle.sks; sourceTree = "<group>"; };
 		27E9EFD81D979EB200F7D3BC /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
-		27E9EFDB1D979F0A00F7D3BC /* snow.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = snow.sks; sourceTree = "<group>"; };
-		27E9EFDD1D979F3400F7D3BC /* smoke.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = smoke.sks; sourceTree = "<group>"; };
-		27E9EFDF1D979F4E00F7D3BC /* rain.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = rain.sks; sourceTree = "<group>"; };
-		27E9EFE11D979F6200F7D3BC /* magic.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = magic.sks; sourceTree = "<group>"; };
-		27E9EFE31D979F8800F7D3BC /* fire.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = fire.sks; sourceTree = "<group>"; };
-		27E9EFE51D979F9B00F7D3BC /* fire2.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = fire2.sks; sourceTree = "<group>"; };
-		27E9EFE71D979FB700F7D3BC /* bokeh.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = bokeh.sks; sourceTree = "<group>"; };
-		27E9EFE81D979FB700F7D3BC /* bokeh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bokeh.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +123,7 @@
 		270454D61D1F7C07002C6637 /* get coin */ = {
 			isa = PBXGroup;
 			children = (
+				27B28C311DCEF06400A8B9FF /* Defaults */,
 				2732EDFA1D8529C000D1CB6D /* コース.png */,
 				27BF28E21D31EC4800AD4B2D /* ボタン２.png */,
 				27BF28E01D31EC3900AD4B2D /* ボタン.png */,
@@ -146,14 +139,6 @@
 				270454E71D1F7C07002C6637 /* Info.plist */,
 				27E9EFD81D979EB200F7D3BC /* spark.png */,
 				27E9EFD71D979EB200F7D3BC /* MyParticle.sks */,
-				27E9EFDB1D979F0A00F7D3BC /* snow.sks */,
-				27E9EFDD1D979F3400F7D3BC /* smoke.sks */,
-				27E9EFDF1D979F4E00F7D3BC /* rain.sks */,
-				27E9EFE11D979F6200F7D3BC /* magic.sks */,
-				27E9EFE31D979F8800F7D3BC /* fire.sks */,
-				27E9EFE51D979F9B00F7D3BC /* fire2.sks */,
-				27E9EFE71D979FB700F7D3BC /* bokeh.sks */,
-				27E9EFE81D979FB700F7D3BC /* bokeh.png */,
 			);
 			path = "get coin";
 			sourceTree = "<group>";
@@ -174,6 +159,16 @@
 				270454FD1D1F7C07002C6637 /* Info.plist */,
 			);
 			path = "get coinUITests";
+			sourceTree = "<group>";
+		};
+		27B28C311DCEF06400A8B9FF /* Defaults */ = {
+			isa = PBXGroup;
+			children = (
+				27B28C321DCEF06400A8B9FF /* Default-568h@2x.png */,
+				27B28C331DCEF06400A8B9FF /* Default-667h@2x.png */,
+				27B28C341DCEF06400A8B9FF /* Default-736h@3x.png */,
+			);
+			path = Defaults;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,18 +234,21 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "三城聖";
 				TargetAttributes = {
 					270454D31D1F7C06002C6637 = {
 						CreatedOnToolsVersion = 7.3;
+						LastSwiftMigration = 0810;
 					};
 					270454EB1D1F7C07002C6637 = {
 						CreatedOnToolsVersion = 7.3;
+						LastSwiftMigration = 0810;
 						TestTargetID = 270454D31D1F7C06002C6637;
 					};
 					270454F61D1F7C07002C6637 = {
 						CreatedOnToolsVersion = 7.3;
+						LastSwiftMigration = 0810;
 						TestTargetID = 270454D31D1F7C06002C6637;
 					};
 				};
@@ -280,19 +278,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				27E9EFE61D979F9B00F7D3BC /* fire2.sks in Resources */,
-				27E9EFE91D979FB700F7D3BC /* bokeh.sks in Resources */,
-				27E9EFE21D979F6200F7D3BC /* magic.sks in Resources */,
 				27BF28E11D31EC3900AD4B2D /* ボタン.png in Resources */,
 				27E9EFDA1D979EB200F7D3BC /* spark.png in Resources */,
-				27E9EFE41D979F8800F7D3BC /* fire.sks in Resources */,
-				27E9EFDC1D979F0A00F7D3BC /* snow.sks in Resources */,
+				27B28C371DCEF06400A8B9FF /* Default-736h@3x.png in Resources */,
+				27B28C361DCEF06400A8B9FF /* Default-667h@2x.png in Resources */,
 				2732EDFB1D8529C000D1CB6D /* コース.png in Resources */,
 				27BF28DF1D31E77A00AD4B2D /* COINS.png in Resources */,
-				27E9EFEA1D979FB700F7D3BC /* bokeh.png in Resources */,
-				27E9EFE01D979F4E00F7D3BC /* rain.sks in Resources */,
+				27B28C351DCEF06400A8B9FF /* Default-568h@2x.png in Resources */,
 				27BF28E31D31EC4800AD4B2D /* ボタン２.png in Resources */,
-				27E9EFDE1D979F3400F7D3BC /* smoke.sks in Resources */,
 				270454E61D1F7C07002C6637 /* LaunchScreen.storyboard in Resources */,
 				270454E31D1F7C07002C6637 /* Assets.xcassets in Resources */,
 				270454E11D1F7C07002C6637 /* Main.storyboard in Resources */,
@@ -321,7 +314,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				270454DC1D1F7C07002C6637 /* GameScene.swift in Sources */,
+				2769C8E61E065603002FC62D /* GameScene.swift in Sources */,
 				27BF28E91D31F5A000AD4B2D /* StageSelectViewController.swift in Sources */,
 				270454DE1D1F7C07002C6637 /* GameViewController.swift in Sources */,
 				27BF28E71D31F56D00AD4B2D /* ViewController.swift in Sources */,
@@ -333,6 +326,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2769C8E51E065602002FC62D /* GameScene.swift in Sources */,
 				270454F11D1F7C07002C6637 /* get_coinTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -341,6 +335,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2769C8E41E065601002FC62D /* GameScene.swift in Sources */,
 				270454FC1D1F7C07002C6637 /* get_coinUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -394,8 +389,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -439,8 +436,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -459,6 +458,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -468,9 +468,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "get coin/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hijiki.get-coin";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -479,9 +481,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "get coin/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hijiki.get-coin";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -494,6 +498,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hijiki.get-coinTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/get coin.app/get coin";
 			};
 			name = Debug;
@@ -506,6 +511,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hijiki.get-coinTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/get coin.app/get coin";
 			};
 			name = Release;
@@ -518,6 +524,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hijiki.get-coinUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = "get coin";
 			};
 			name = Debug;
@@ -529,6 +536,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hijiki.get-coinUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = "get coin";
 			};
 			name = Release;
