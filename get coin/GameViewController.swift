@@ -18,6 +18,7 @@ class GameViewController: UIViewController {
         
         //gamesceneをsceneに代入
         let scene = GameScene(size:CGSize(width: 640, height: 1136))
+        scene.stage = self.stage
         let skView = self.view as! SKView
         scene.scaleMode = .aspectFit
         skView.presentScene(scene)
