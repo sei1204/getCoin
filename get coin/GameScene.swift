@@ -10,75 +10,47 @@ import SpriteKit
 
 class GameScene: SKScene {
     //    ステージの値を共有
-    open var stage: Int!
-    var appDelegate:AppDelegate = UIApplication.shared.delegate as! AppDelegate
+    var stage: Int!
     //    ボールとラベルの設定
     let ball = SKShapeNode(circleOfRadius: 50)
-    var wroteThing: SKShapeNode!
     
-    var joint: SKPhysicsJointFixed!
-    
+    var path: UIBezierPath!
 //    ユーザーが書く動作
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         /* Called when a touch begins */
         
-        for touch in touches {
-            let location = touch.location(in: self)
-            
-            self.wroteThing = SKShapeNode(circleOfRadius: 50)
-            
-            wroteThing.fillColor = UIColor.black
-            wroteThing.physicsBody?.isDynamic = true
-            wroteThing.physicsBody?.allowsRotation = true
-            wroteThing.physicsBody?.restitution = 1.0
-            wroteThing.position = location
-            wroteThing.isUserInteractionEnabled = true
-
-            wroteThing.physicsBody = SKPhysicsBody(circleOfRadius: 50)
-            self.joint = SKPhysicsJointFixed.joint(withBodyA: wroteThing.physicsBody!.self, bodyB: wroteThing.physicsBody!.self, anchor: CGPoint(x: wroteThing.frame.maxX, y: wroteThing.frame.midY))
-//            self.addChild(wroteThing)
-            self.physicsWorld.add(joint)
-        }
+        path = UIBezierPath()
+        
     }
-    
     //ユーザーがドラッグしている時にする処理
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
         
-       //self.addChild(wroteThing)を繰り返す
-        for touch in touches {
-            let location = touch.location(in: self)
+        guard let touchPoint = touches.first?.location(in: self), let previousTouchPoint = touches.first?.previousLocation(in: self) else {
             
-            self.wroteThing = SKShapeNode(circleOfRadius: 50)
-            
-            wroteThing.fillColor = UIColor.black
-            wroteThing.physicsBody?.isDynamic = true
-            wroteThing.physicsBody?.allowsRotation = true
-            wroteThing.physicsBody?.restitution = 1.0
-            wroteThing.position = location
-            wroteThing.isUserInteractionEnabled = true
-            
-            wroteThing.physicsBody = SKPhysicsBody(circleOfRadius: 50)
-            
-            self.joint = SKPhysicsJointFixed.joint(withBodyA: wroteThing.physicsBody!, bodyB: wroteThing.physicsBody!, anchor: CGPoint(x: wroteThing.frame.maxX, y: wroteThing.frame.midY))
-//            self.addChild(wroteThing)
-            self.physicsWorld.add(joint)
-            
+            return
         }
+        path.move(to: previousTouchPoint)
+        path.addLine(to: touchPoint)
     }
     
     //ユーザーが画面から指を離した時にする処理
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
         
-        //重力、その他をwroteThingに付与する
-        wroteThing.physicsBody = SKPhysicsBody(circleOfRadius: 50)
-        self.joint = SKPhysicsJointFixed.joint(withBodyA: wroteThing.physicsBody!.self, bodyB: wroteThing.physicsBody!.self, anchor: CGPoint(x: wroteThing.frame.maxX, y: wroteThing.frame.midY))
+        let wroteThing = SKShapeNode()
+        wroteThing.path = path.cgPath
+        wroteThing.lineWidth = CGFloat(5.0)
+        wroteThing.fillColor = UIColor.black
+        wroteThing.physicsBody = SKPhysicsBody(circleOfRadius: wroteThing.frame.width / 2)
+        print(wroteThing.physicsBody == nil)
+        wroteThing.physicsBody?.isDynamic = true
+        wroteThing.physicsBody?.allowsRotation = true
+        wroteThing.physicsBody?.restitution = 1.0
+        wroteThing.isUserInteractionEnabled = true
         self.addChild(wroteThing)
-        self.physicsWorld.add(joint)
     }
     
     //    ノードの初期化
     override func didMove(to view: SKView) {
-        self.stage = appDelegate.numGamenseni
         self.hantei(sentaku:stage)
         
         //エミッターを追加
@@ -97,18 +69,6 @@ class GameScene: SKScene {
         ball.physicsBody?.allowsRotation = true
         
         ball.physicsBody = SKPhysicsBody(circleOfRadius: 50)
-
-        self.wroteThing = SKShapeNode(circleOfRadius: 50)
-        
-        wroteThing.fillColor = UIColor.black
-        wroteThing.physicsBody?.isDynamic = true
-        wroteThing.physicsBody?.allowsRotation = true
-        wroteThing.physicsBody?.restitution = 1.0
-        wroteThing.isUserInteractionEnabled = true
-        
-        wroteThing.physicsBody = SKPhysicsBody(circleOfRadius: 50)
-        
-        
     }
     //    ボタンによるコース分けの宣言
     func hantei(sentaku:Int) {

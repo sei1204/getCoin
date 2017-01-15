@@ -18,6 +18,7 @@
 		2769C8E41E065601002FC62D /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270454DB1D1F7C07002C6637 /* GameScene.swift */; };
 		2769C8E51E065602002FC62D /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270454DB1D1F7C07002C6637 /* GameScene.swift */; };
 		2769C8E61E065603002FC62D /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270454DB1D1F7C07002C6637 /* GameScene.swift */; };
+		27AC6D451E2B165100213831 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AC6D441E2B165100213831 /* TestView.swift */; };
 		27B28C351DCEF06400A8B9FF /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 27B28C321DCEF06400A8B9FF /* Default-568h@2x.png */; };
 		27B28C361DCEF06400A8B9FF /* Default-667h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 27B28C331DCEF06400A8B9FF /* Default-667h@2x.png */; };
 		27B28C371DCEF06400A8B9FF /* Default-736h@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 27B28C341DCEF06400A8B9FF /* Default-736h@3x.png */; };
@@ -63,6 +64,7 @@
 		270454FB1D1F7C07002C6637 /* get_coinUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = get_coinUITests.swift; sourceTree = "<group>"; };
 		270454FD1D1F7C07002C6637 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2732EDFA1D8529C000D1CB6D /* コース.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "コース.png"; sourceTree = "<group>"; };
+		27AC6D441E2B165100213831 /* TestView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
 		27B28C321DCEF06400A8B9FF /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		27B28C331DCEF06400A8B9FF /* Default-667h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-667h@2x.png"; sourceTree = "<group>"; };
 		27B28C341DCEF06400A8B9FF /* Default-736h@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-736h@3x.png"; sourceTree = "<group>"; };
@@ -139,6 +141,7 @@
 				270454E71D1F7C07002C6637 /* Info.plist */,
 				27E9EFD81D979EB200F7D3BC /* spark.png */,
 				27E9EFD71D979EB200F7D3BC /* MyParticle.sks */,
+				27AC6D441E2B165100213831 /* TestView.swift */,
 			);
 			path = "get coin";
 			sourceTree = "<group>";
@@ -314,6 +317,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27AC6D451E2B165100213831 /* TestView.swift in Sources */,
 				2769C8E61E065603002FC62D /* GameScene.swift in Sources */,
 				27BF28E91D31F5A000AD4B2D /* StageSelectViewController.swift in Sources */,
 				270454DE1D1F7C07002C6637 /* GameViewController.swift in Sources */,

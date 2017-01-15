@@ -37,7 +37,6 @@ class StageSelectViewController: UIViewController {
     @IBAction func stageSelect(sender: UIButton){
         print(sender.tag)
         stageNum = sender.tag
-        appDelegate.numGamenseni = self.stageNum
         self.performSegueToGameScene()
     }
     
